@@ -1,0 +1,15 @@
+<h2>Detail</h2>
+
+<p *ngIf="product.name">
+Name: {{ product.name }}
+</p>
+
+<div *ngIf="product.description">
+Description: {{ product.description }}
+</div>
+<div>
+  <p>
+  <button type="button" (click)="previous()">Previous</button>  
+  <button type="button" (click)="next()">Next</button>
+  </p>
+</div> 
