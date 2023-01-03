@@ -4,6 +4,18 @@
 <h3>{{ product.name }}</h3>
 <h4>{{ product.price | currency }}</h4>
 <p>{{ product.description }}</p>
+<button type="button" (click)="addToCart(product)">Buy</button>
 </div>
 
+<div>
+<p>
+<button type="button" (click)="previous()">Previous</button>  
+<button type="button" (click)="next()">Next</button>
+</p>
+</div> 
+
 <a href="/">Back To Product Listing</a>
+
+
+
+
