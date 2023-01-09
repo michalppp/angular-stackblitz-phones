@@ -29,7 +29,6 @@ export class CartComponent {
   }
 
   hasItems() : boolean {
-    window.alert("hasItems return " + this.items.length);
     return this.items.length != 0;
   }
 

@@ -9,7 +9,8 @@
   <span>{{ item.price | currency }}</span>
 </div>
 
-<div *ngIf="hasItems">
+
+<div *ngIf="hasItems()">
 <form [formGroup]="checkoutForm"  (ngSubmit)="onSubmit()">
 
   <div>
